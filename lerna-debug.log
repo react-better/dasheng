@@ -1,0 +1,13 @@
+15 error Error: Command failed: git remote update
+15 error fatal: unable to access 'https://github.com/yezihaohao/dasheng_p.git/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+15 error error: Could not fetch origin
+15 error
+15 error Fetching origin
+15 error
+15 error     at makeError (D:\code\github\dasheng_p\node_modules\execa\index.js:174:9)
+15 error     at Function.module.exports.sync (D:\code\github\dasheng_p\node_modules\execa\index.js:338:15)
+15 error     at Object.execSync (D:\code\github\dasheng_p\node_modules\@lerna\child-process\index.js:26:16)
+15 error     at updateRemote (D:\code\github\dasheng_p\node_modules\@lerna\version\lib\is-behind-upstream.js:26:16)
+15 error     at isBehindUpstream (D:\code\github\dasheng_p\node_modules\@lerna\version\lib\is-behind-upstream.js:11:3)
+15 error     at VersionCommand.initialize (D:\code\github\dasheng_p\node_modules\@lerna\version\index.js:150:9)
+15 error     at D:\code\github\dasheng_p\node_modules\@lerna\command\index.js:272:24

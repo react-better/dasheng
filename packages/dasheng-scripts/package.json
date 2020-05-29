@@ -1,0 +1,54 @@
+{
+    "name": "dasheng-scripts",
+    "version": "0.0.2-ga27wyb1",
+    "scripts": {
+        "start": "node ./scripts/start.js",
+        "build": "node ./scripts/build.js"
+    },
+    "bin": {
+        "dasheng-scripts": "./bin/index.js"
+    },
+    "files": [
+        "bin",
+        "config",
+        "scripts",
+        ".eslintrc.js"
+    ],
+    "engines": {
+        "node": ">=8.10"
+    },
+    "dependencies": {
+        "@babel/core": "^7.10.1",
+        "@typescript-eslint/eslint-plugin": "^2.29.0",
+        "@typescript-eslint/parser": "^2.29.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "babel-preset-react-app": "^9.1.2",
+        "css-loader": "^3.5.3",
+        "eslint": "^6.8.0",
+        "eslint-config-react-app": "^5.2.1",
+        "eslint-loader": "^4.0.0",
+        "eslint-plugin-flowtype": "^4.7.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^3.0.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "postcss-flexbugs-fixes": "^4.2.1",
+        "postcss-loader": "^3.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "react-dev-utils": "^10.2.1",
+        "style-loader": "^1.2.1",
+        "terser-webpack-plugin": "^3.0.1",
+        "ts-loader": "^7.0.1",
+        "typescript": "^3.8.3",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-manifest-plugin": "^2.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.35",
+        "react": "^16.13.1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "dasheng-micro",
+    "version": "0.0.1",
+    "description": "大圣微前端项目",
+    "scripts": {
+        "start": "dasheng-scripts start",
+        "build": "dasheng-scripts build"
+    },
+    "rootAuthor": "chenghao",
+    "eslintConfig": {
+        "extends": "react-app"
+    }
+}

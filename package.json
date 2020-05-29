@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "lerna publish",
+    "install": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.1",
+    "lerna": "^3.21.0"
+  }
+}

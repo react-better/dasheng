@@ -1,0 +1,27 @@
+{
+  "name": "dasheng-loader",
+  "version": "0.0.1",
+  "description": "dasheng loader",
+  "main": "build/main.chunk.js",
+  "module": "build/main.chunk.js",
+  "scripts": {
+    "start": "dasheng-scripts start",
+    "build": "dasheng-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenghao",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "babel-loader": "^8.1.0",
+    "dasheng-scripts": "^0.0.2-ga27wyb1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

@@ -1,0 +1,28 @@
+/*
+ * File: tsconfig.json
+ * Desc: 描述
+ * File Created: 2020-04-23 14:51:02
+ * Author: chenghao at chenghao
+ * ------
+ * Copyright 2020 - present, chenghao
+ */
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "declaration": true,
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        // "noEmit": true,
+        "jsx": "react"
+    },
+    "include": ["./src"]
+}
