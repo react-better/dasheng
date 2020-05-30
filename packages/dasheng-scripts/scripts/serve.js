@@ -24,7 +24,7 @@ compiler.hooks.invalid.tap('invalid', () => {
     if (isInteractive) {
         clearConsole();
     }
-    console.log('编译中...');
+    console.log('大圣：编译中...');
 });
 
 compiler.hooks.done.tap('done', async (stats) => {
@@ -33,7 +33,7 @@ compiler.hooks.done.tap('done', async (stats) => {
     }
 });
 
-console.log(chalk.green('开始执行打包操作...\n'));
+console.log(chalk.green('大圣：开始执行打包操作...\n'));
 
 function clearBuild() {
     fs.emptyDirSync(paths.appBuild);

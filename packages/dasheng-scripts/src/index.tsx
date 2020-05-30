@@ -9,8 +9,6 @@
 import React from 'react';
 
 const Test = (props: any) => {
-    const a = 1;
-    console.log((a as any).a);
     return <div>Hello DaSheng</div>;
 };
 

@@ -12,7 +12,6 @@ const paths = require('./paths');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const webpack = require('webpack');
 
 // style files regexes
 const cssRegex = /\.css$/;
@@ -65,6 +64,7 @@ module.exports = function (webpackEnv = 'development') {
         output: {
             path: paths.appBuild,
             filename: '[name].chunk.js',
+            library: require(paths.appPackage).name,
             libraryTarget: 'umd',
         },
         optimization: {
@@ -121,9 +121,6 @@ module.exports = function (webpackEnv = 'development') {
             extensions: ['.tsx', '.ts', '.js', '.jsx'],
         },
         plugins: [
-            new webpack.DefinePlugin({
-                'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') },
-            }),
             new ManifestPlugin(),
             new MiniCssExtractPlugin({
                 filename: 'static/css/[name].css',
