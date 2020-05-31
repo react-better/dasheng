@@ -6,6 +6,10 @@
  * ------
  * Copyright 2020 - present, chenghao
  */
-const a =  '1';
+import React from 'react';
 
-console.log( a)
+const DaSheng = () => {
+    return <div>Hello DaSheng</div>;
+};
+
+export default DaSheng;
