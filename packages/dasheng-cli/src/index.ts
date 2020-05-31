@@ -8,12 +8,12 @@
  */
 
 import { Command } from 'commander';
-import packageJson from '../package.json';
+// import packageJson from '../package.json';
 import * as validator from './validator';
 import * as cmd from './command';
 import { chalk } from './chalk';
 import createApp from './createApp';
-import log from './log';
+const packageJson = require(require('path').resolve(process.cwd(), 'package.json'));
 
 let projectName: string = '';
 const program = new Command()
@@ -29,6 +29,5 @@ const program = new Command()
     .on('--help', () => cmd.help())
     .parse(process.argv);
 
-console.log(program.useNpm);
 validator.validateName(projectName!);
 createApp(projectName, program.useNpm);
