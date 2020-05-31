@@ -14,5 +14,5 @@ export function help() {
     log(chalk('用于一键下载微前端模板项目\n'));
     log(chalk('下载微前端模板指令如下：\n'));
     log(chalk('dasheng-cli micro-front \n'));
-    log(chalk('更多详细信息请访问 https://google.com \n'));
+    log(chalk('更多详细信息请访问 https://github.com/karakal-FET/dasheng \n'));
 }

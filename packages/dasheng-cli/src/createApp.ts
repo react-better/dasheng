@@ -9,7 +9,7 @@
 import path from 'path';
 import log from './log';
 import fs from 'fs-extra';
-import { chalk, chalkWarn } from './chalk';
+import { chalk } from './chalk';
 import os from 'os';
 import packageJson from './packageTmp.json';
 import { execSync } from 'child_process';
@@ -32,7 +32,7 @@ function createApp(appName: string, useNpm: boolean) {
 
     installDependencies(root, useYarn);
 
-    setLastTips(appName)
+    setLastTips(appName);
 }
 
 function installTemplate(root: string, useYarn: boolean) {
@@ -109,7 +109,11 @@ function setLastTips(appName: string) {
     log(chalk('打包项目：'));
     log(chalk('    yarn build\n'));
     log(chalk('祝您编程愉快~~~🌈🌈🌈\n'));
-    log(chalk('更多关于dasheng<大圣>微前端解决方案的信息，请查看网站：https://google.com'));
+    log(
+        chalk(
+            '更多关于dasheng<大圣>微前端解决方案的信息，请查看网站：https://github.com/karakal-FET/dasheng'
+        )
+    );
 }
 
 export default createApp;

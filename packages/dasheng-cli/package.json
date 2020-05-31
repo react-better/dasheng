@@ -1,23 +1,24 @@
 {
-  "name": "dasheng-cli",
-  "version": "0.0.1",
-  "description": "dasheng cli",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc -w",
-    "build": "tsc"
-  },
-  "author": "chenghao",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/cross-spawn": "^6.0.2",
-    "@types/validate-npm-package-name": "^3.0.0",
-    "chalk": "^4.0.0",
-    "commander": "^5.1.0",
-    "cross-spawn": "^7.0.2",
-    "fs-extra": "^9.0.0",
-    "typescript": "^3.9.3",
-    "validate-npm-package-name": "^3.0.0"
-  }
+    "name": "dasheng-cli",
+    "version": "0.0.1",
+    "description": "dasheng cli",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "tsc -w",
+        "build": "tsc"
+    },
+    "author": "chenghao",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/cross-spawn": "^6.0.2",
+        "@types/fs-extra": "^9.0.1",
+        "@types/validate-npm-package-name": "^3.0.0",
+        "chalk": "^4.0.0",
+        "commander": "^5.1.0",
+        "cross-spawn": "^7.0.2",
+        "fs-extra": "^9.0.0",
+        "typescript": "^3.9.3",
+        "validate-npm-package-name": "^3.0.0"
+    }
 }

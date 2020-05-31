@@ -1,6 +1,6 @@
 {
     "name": "dasheng-scripts",
-    "version": "0.0.2-ga27wyb1",
+    "version": "0.0.2-ga27wyb2",
     "scripts": {
         "start": "node ./scripts/start.js",
         "build": "node ./scripts/build.js"
