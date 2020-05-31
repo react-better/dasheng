@@ -16,7 +16,7 @@ const compiler = webpack(
     utils.getRewriteConf().finalWebpack(require('../config/webpack.config')('production'))
 );
 
-console.log(chalk.green('大圣：开始执行打包操作...\n'));
+console.log(chalk.green('✈️  大圣：开始执行打包操作...\n'));
 
 function clearBuild() {
     fs.emptyDirSync(paths.appBuild);
@@ -26,7 +26,6 @@ clearBuild();
 
 compiler.run((err, stats) => {
     if (utils.handleMessage(stats)) {
-        console.log(chalk.blue('大圣：打包成功！可以随时发布！'));
+        console.log(chalk.blue('✅  大圣：打包成功！可以随时发布！'));
     }
 });
-

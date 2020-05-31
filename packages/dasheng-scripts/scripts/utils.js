@@ -35,7 +35,7 @@ function handleMessage(stats) {
 
 function handleWarnings(message) {
     if (message.warnings.length) {
-        console.log(chalk.yellow('大圣：打包出现以下警告提示，请注意！\n'));
+        console.log(chalk.yellow('🚨 大圣：打包出现以下警告提示，请注意！\n'));
         console.log(chalk.yellow(message.warnings.join('\n\n')));
         return true;
     }
@@ -44,7 +44,7 @@ function handleWarnings(message) {
 
 function handleErrors(message) {
     if (message.errors.length) {
-        console.log(chalk.red('大圣：打包出现以下异常提示，请修复！\n'));
+        console.log(chalk.red('🚨 大圣：打包出现以下异常提示，请修复！\n'));
         console.log(chalk.red(message.errors.join('\n\n')));
         return true;
     }
@@ -55,5 +55,5 @@ module.exports = {
     getRewriteConf,
     handleErrors,
     handleMessage,
-    handleWarnings
+    handleWarnings,
 };

@@ -102,16 +102,16 @@ function copyTemplateToRoot(root: string, template: string) {
 }
 
 function setLastTips(appName: string) {
-    log(chalk('\n已经成功安装dasheng<大圣>微前端模板项目✨✨✨✨✨✨\n'));
+    log(chalk('\n✅  已经成功安装dasheng<大圣>微前端模板项目✨\n'));
     log(chalk(`请进入项目目录进行编程：cd ${appName}\n`));
     log(chalk('启动项目：'));
     log(chalk('    yarn start\n'));
     log(chalk('打包项目：'));
     log(chalk('    yarn build\n'));
-    log(chalk('祝您编程愉快~~~🌈🌈🌈\n'));
+    log(chalk('☕  祝您编程愉快~~~\n'));
     log(
         chalk(
-            '更多关于dasheng<大圣>微前端解决方案的信息，请查看网站：https://github.com/karakal-FET/dasheng'
+            '🎯  更多关于dasheng<大圣>微前端解决方案的信息，请查看网站：https://github.com/karakal-FET/dasheng'
         )
     );
 }

@@ -4,7 +4,7 @@
  * File Created: 2020-05-21 22:09:09
  * Author: chenghao
  * ------
- * Copyright 2020 - present, karakal
+ * Copyright 2020 - present, chenghao
  */
 module.exports = {
     env: {

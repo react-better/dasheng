@@ -2,9 +2,9 @@
  * File: tsconfig.json
  * Desc: 描述
  * File Created: 2020-04-23 14:51:02
- * Author: chenghao at <hao.cheng@karakal.com.cn>
+ * Author: chenghao
  * ------
- * Copyright 2020 - present, karakal
+ * Copyright 2020 - present, chenghao
  */
 {
     "compilerOptions": {

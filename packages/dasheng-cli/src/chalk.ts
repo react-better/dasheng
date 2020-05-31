@@ -2,9 +2,9 @@
  * File: chalk.ts
  * Desc: chalk配置
  * File Created: 2020-05-26 14:42:03
- * Author: chenghao at <hao.cheng@karakal.com.cn>
+ * Author: chenghao
  * ------
- * Copyright 2020 - present, karakal
+ * Copyright 2020 - present, chenghao
  */
 import chalkPro from 'chalk';
 

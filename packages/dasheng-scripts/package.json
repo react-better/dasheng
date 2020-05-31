@@ -49,6 +49,7 @@
     },
     "devDependencies": {
         "@types/react": "^16.9.35",
+        "node-emoji": "^1.10.0",
         "react": "^16.13.1"
     }
 }
