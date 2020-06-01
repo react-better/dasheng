@@ -10,7 +10,6 @@ const webpack = require('webpack');
 const utils = require('./utils');
 const chalk = require('chalk');
 const clearConsole = require('react-dev-utils/clearConsole');
-const emoji = require('node-emoji');
 const isInteractive = process.stdout.isTTY;
 process.env.NODE_ENV = 'development';
 

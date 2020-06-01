@@ -95,17 +95,7 @@ module.exports = function (webpackEnv = 'development') {
                 },
                 {
                     test: /\.tsx?$/,
-                    use: [
-                        {
-                            loader: 'babel-loader',
-                            options: {
-                                customize: require.resolve(
-                                    'babel-preset-react-app/webpack-overrides'
-                                ),
-                            },
-                        },
-                        'ts-loader',
-                    ],
+                    use: ['ts-loader'],
                     exclude: /node_modules/,
                 },
                 {

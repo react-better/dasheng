@@ -24,7 +24,9 @@ export function addCss(url: string, cb?: Function) {
     return new Promise((resolve) => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
+        link.type = 'text/css';
         link.href = url;
+        document.head.appendChild(link);
         link.onload = () => {
             cb && cb();
             resolve();

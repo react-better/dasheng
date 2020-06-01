@@ -46,6 +46,7 @@ function installTemplate(root: string, useYarn: boolean) {
 }
 
 function installDependencies(root: string, useYarn: boolean) {
+    copyLock(root);
     log(chalk('\n正在安装依赖包，请耐心等待几分钟...\n'));
     const dependenciesToInstall = [
         'react',
@@ -78,8 +79,8 @@ function runCmd({
 }) {
     let command, args;
     if (useYarn) {
-        command = 'yarn';
-        args = [cmds[0], '--cwd', root, ...dependencies];
+        command = 'yarnpkg';
+        args = [cmds[0], '--exact', '--cwd', root, ...dependencies];
     } else {
         command = 'npm';
         args = [cmds[0], ...dependencies];
@@ -99,6 +100,10 @@ function shoulUseYarn() {
 function copyTemplateToRoot(root: string, template: string) {
     const tempDir = path.join(path.resolve(root), `node_modules/${template}/template`);
     fs.copySync(tempDir, root);
+}
+
+function copyLock(root: string) {
+    fs.copySync(require.resolve('../../yarn.lock.cached'), path.join(root, 'yarn.lock'));
 }
 
 function setLastTips(appName: string) {

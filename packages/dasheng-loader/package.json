@@ -1,6 +1,6 @@
 {
     "name": "dasheng-loader",
-    "version": "0.0.1-beta",
+    "version": "0.1.0",
     "description": "dasheng loader",
     "main": "build/main.chunk.js",
     "module": "build/main.chunk.js",
@@ -14,10 +14,11 @@
     "files": [
         "build"
     ],
+    "types": "build/index.d.ts",
     "devDependencies": {
         "@types/react": "^16.9.35",
         "babel-loader": "^8.1.0",
-        "dasheng-scripts": "^0.0.2-ga27wyb1",
+        "dasheng-scripts": "^0.0.4-beta",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
     },

@@ -1,6 +1,6 @@
 {
     "name": "dasheng-cli",
-    "version": "0.0.3-beta8",
+    "version": "0.1.0",
     "description": "dasheng cli",
     "main": "build/src/index.js",
     "bin": {
@@ -15,7 +15,8 @@
     "license": "MIT",
     "files": [
         "build",
-        "bin"
+        "bin",
+        "yarn.lock.cached"
     ],
     "dependencies": {
         "chalk": "^4.0.0",

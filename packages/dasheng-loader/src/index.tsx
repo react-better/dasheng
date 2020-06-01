@@ -14,7 +14,7 @@ interface DaShengProps {
     compName: any;
 }
 let baseOrigin = '';
-const DaSheng: React.FC<DaShengProps> = (props) => {
+const DaSheng = (props: DaShengProps) => {
     const { url, compName, ...restProps } = props;
     const [Comp, setComp] = useState<any>();
 
@@ -31,6 +31,6 @@ const DaSheng: React.FC<DaShengProps> = (props) => {
     return Comp ? <Comp {...restProps} /> : null;
 };
 
-// DaSheng.origin = (origin: string) => (baseOrigin = origin);
+DaSheng.origin = (origin: string) => (baseOrigin = origin);
 
 export default DaSheng;

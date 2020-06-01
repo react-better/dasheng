@@ -10,6 +10,7 @@ const path = require('path');
 const fs = require('fs');
 const clearConsole = require('react-dev-utils/clearConsole');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
+const chalk = require('chalk');
 
 /**
  * 获取重写配置

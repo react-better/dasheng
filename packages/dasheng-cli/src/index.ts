@@ -13,7 +13,7 @@ import * as validator from './validator';
 import * as cmd from './command';
 import { chalk } from './chalk';
 import createApp from './createApp';
-const packageJson = require(require('path').resolve(process.cwd(), 'package.json'));
+const packageJson = require('../../package.json');
 
 let projectName: string = '';
 const program = new Command()

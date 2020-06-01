@@ -7,9 +7,10 @@
  * Copyright 2020 - present, chenghao
  */
 import React from 'react';
+import './index.css';
 
 const Test = (props: any) => {
-    return <div>Hello DaSheng</div>;
+    return <div className="test">Hello DaSheng</div>;
 };
 
 export default Test;
