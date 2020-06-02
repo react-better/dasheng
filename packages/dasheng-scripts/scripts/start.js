@@ -11,7 +11,6 @@ const utils = require('./utils');
 const chalk = require('chalk');
 const clearConsole = require('react-dev-utils/clearConsole');
 const isInteractive = process.stdout.isTTY;
-process.env.NODE_ENV = 'development';
 
 const compiler = webpack(
     utils.getRewriteConf().finalWebpack(require('../config/webpack.config')('development'))
