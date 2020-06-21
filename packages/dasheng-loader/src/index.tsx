@@ -20,6 +20,7 @@ const DaSheng = (props: DaShengProps) => {
 
     useEffect(() => {
         loadManifest(getUrl(), () => {
+            // 需要实时刷新组件，故而不需要做已存在校验
             const C = (window[compName] as any).default;
             setComp(() => C);
         });
