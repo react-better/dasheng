@@ -6,7 +6,9 @@ const chalk = require('chalk');
 const args = process.argv.slice(2);
 const scripts = ['start', 'build'];
 
-if (!scripts.includes(args[0])) return console.log(chalk.red('未知的脚本指令，请重新输入'));
+if (!scripts.includes(args[0])) {
+    return console.log(chalk.red('未知的脚本指令，请重新输入'));
+}
 
 runScript(args[0]);
 
