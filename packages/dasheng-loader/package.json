@@ -1,6 +1,6 @@
 {
     "name": "dasheng-loader",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "dasheng loader",
     "main": "build/main.chunk.js",
     "module": "build/main.chunk.js",

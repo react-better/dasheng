@@ -12,6 +12,7 @@ import { loadManifest } from './utils';
 interface DaShengProps {
     url?: string;
     compName: any;
+    [key: string]: any;
 }
 let baseOrigin = '';
 const DaSheng = (props: DaShengProps) => {
